@@ -13,17 +13,17 @@ import ObjectMapper
 
 class ApiClient {
   
-    
-    static func test(urlString: String) -> Observable<[Post2]> {
-        return request(urlString: urlString)
+    static func test() -> Observable<Post2> {
+        return request2(ApiRouter.getFilm)
     }
- 
     
     // MARK: - Request Mappable
-    private static func request2<T: Mappable>(_ urlConvertible: URLRequestConvertible) -> Observable<T> {
+    static func request2<T: Mappable>(_ urlConvertible: URLRequestConvertible) -> Observable<T> {
         return Observable<T>.create { (observer) -> Disposable in
+            
             let request = AF.request(urlConvertible)
             request.responseJSON { (response) in
+                
                 switch response.result {
                 case .success(let value):
                     print("Log: Response: \(value)")
@@ -33,12 +33,12 @@ class ApiClient {
                         observer.onCompleted()
                     }
                 case .failure(let error):
-                    print("Log: Error: \(error.localizedDescription) StatusCode: \(response.response?.statusCode)")
+                    print("Log: Error: \(error.localizedDescription) StatusCode: \(String(describing: response.response?.statusCode))")
                     observer.onError(error)
                 }
             }
             return Disposables.create {
-                request.cancel()
+//                request.cancel()
             }
         }
     }

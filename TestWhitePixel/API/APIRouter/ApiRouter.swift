@@ -13,6 +13,8 @@ import ObjectMapper
 
 // MARK: - ApiRouter
 enum ApiRouter: URLRequestConvertible {
+    
+    case getFilm
     case getPosts(userId: Int)
     
     func asURLRequest() throws -> URLRequest {
@@ -36,9 +38,11 @@ enum ApiRouter: URLRequestConvertible {
     
     //MARK: - HttpMethod
     //This returns the HttpMethod type. It's used to determine the type if several endpoints are peresent
-    private var method: HTTPMethod {
+    private var method: Alamofire.HTTPMethod {
         switch self {
         case .getPosts:
+            return .post
+        case .getFilm:
             return .get
         }
     }
@@ -49,6 +53,8 @@ enum ApiRouter: URLRequestConvertible {
         switch self {
         case .getPosts:
             return "posts"
+        case .getFilm:
+            return "films"
         }
     }
     
@@ -58,6 +64,8 @@ enum ApiRouter: URLRequestConvertible {
         switch self {
         case .getPosts(let userId):
             return [Constants.Parameters.userId: userId]
+        default:
+            return [:]
         }
     }
 }

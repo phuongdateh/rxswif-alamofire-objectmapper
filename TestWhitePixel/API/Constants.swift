@@ -11,7 +11,7 @@ import Foundation
 struct Constants {
     
     //The API's base URL
-    static let baseUrl = "https://jsonplaceholder.typicode.com"
+    static let baseUrl = "https://swapi.dev/api/"
     
     //The parameters (Queries) that we're gonna use
     struct Parameters {

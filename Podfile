@@ -8,7 +8,7 @@ target 'TestWhitePixel' do
   # Pods for TestWhitePixe
   pod 'RxSwift', '~> 5'
   pod 'RxCocoa', '~> 5'
-#  pod 'Alamofire', '~> 5.2'
+  pod 'Alamofire', '~> 5.2'
   pod 'ObjectMapper'
   pod 'RealmSwift'
 

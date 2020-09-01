@@ -21,20 +21,22 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        ApiClient.test(urlString: "https://swapi.dev/api/films").observeOn(MainScheduler.instance).subscribe(onNext: { (listPost) in
+        ApiClient.test().observeOn(MainScheduler.instance).subscribe(onNext: { (listPost) in
             print(listPost)
         }, onError: nil, onCompleted: {
             print("onCompleted")
             }, onDisposed: nil).disposed(by: DisposeBag())
+        
+//        fetchFilms()
     }
     
-    private func getPost2() {
-        ApiClient.getpost2(userId: 1)
-            .observeOn(MainScheduler.instance)
-            .subscribe(onNext: { (post) in
-                print("Post: \(post)")
-            }, onError: nil, onCompleted: nil, onDisposed: nil).disposed(by: DisposeBag())
-    }
+//    private func getPost2() {
+//        ApiClient.getpost2(userId: 1)
+//            .observeOn(MainScheduler.instance)
+//            .subscribe(onNext: { (post) in
+//                print("Post: \(post)")
+//            }, onError: nil, onCompleted: nil, onDisposed: nil).disposed(by: DisposeBag())
+//    }
     
     func fetchFilms() {
       // 1
