@@ -1,0 +1,828 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		048AA2D604308B442CFB1257 /* Pods_TestWhitePixelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79F5E8FFC8B048BE48512869 /* Pods_TestWhitePixelTests.framework */; };
+		183E9866F34410B1D0268B13 /* Pods_TestWhitePixel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCA3EBDE063CCD584BA508D5 /* Pods_TestWhitePixel.framework */; };
+		186415631920E4B511E40431 /* Pods_TestWhitePixel_TestWhitePixelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA46B54EE47A922AA0027FD /* Pods_TestWhitePixel_TestWhitePixelUITests.framework */; };
+		BC84073024FA900D00E8D5F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84072F24FA900D00E8D5F3 /* AppDelegate.swift */; };
+		BC84073224FA900D00E8D5F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84073124FA900D00E8D5F3 /* SceneDelegate.swift */; };
+		BC84073424FA900D00E8D5F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84073324FA900D00E8D5F3 /* ViewController.swift */; };
+		BC84073724FA900D00E8D5F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC84073524FA900D00E8D5F3 /* Main.storyboard */; };
+		BC84073A24FA900D00E8D5F3 /* TestWhitePixel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC84073824FA900D00E8D5F3 /* TestWhitePixel.xcdatamodeld */; };
+		BC84073C24FA900E00E8D5F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC84073B24FA900E00E8D5F3 /* Assets.xcassets */; };
+		BC84073F24FA900E00E8D5F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC84073D24FA900E00E8D5F3 /* LaunchScreen.storyboard */; };
+		BC84074A24FA900E00E8D5F3 /* TestWhitePixelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84074924FA900E00E8D5F3 /* TestWhitePixelTests.swift */; };
+		BC84075524FA900E00E8D5F3 /* TestWhitePixelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84075424FA900E00E8D5F3 /* TestWhitePixelUITests.swift */; };
+		BC84076424FB58EB00E8D5F3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84076324FB58EB00E8D5F3 /* Constants.swift */; };
+		BC84076524FB58EB00E8D5F3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84076324FB58EB00E8D5F3 /* Constants.swift */; };
+		BC84076824FB592F00E8D5F3 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84076724FB592F00E8D5F3 /* ApiRouter.swift */; };
+		BC84076924FB592F00E8D5F3 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84076724FB592F00E8D5F3 /* ApiRouter.swift */; };
+		BC84076C24FB5CB000E8D5F3 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84076B24FB5CB000E8D5F3 /* Post.swift */; };
+		BC84076D24FB5CB000E8D5F3 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84076B24FB5CB000E8D5F3 /* Post.swift */; };
+		BC84076F24FBAB1300E8D5F3 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84076E24FBAB1300E8D5F3 /* ApiClient.swift */; };
+		BC84077224FBFC3900E8D5F3 /* NetworkRequestConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84077124FBFC3900E8D5F3 /* NetworkRequestConstant.swift */; };
+		BC84077424FBFC6700E8D5F3 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84077324FBFC6700E8D5F3 /* RequestManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC84074624FA900E00E8D5F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC84072424FA900D00E8D5F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC84072B24FA900D00E8D5F3;
+			remoteInfo = TestWhitePixel;
+		};
+		BC84075124FA900E00E8D5F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC84072424FA900D00E8D5F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC84072B24FA900D00E8D5F3;
+			remoteInfo = TestWhitePixel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		072C94A89722B2E2F79E0E67 /* Pods-TestWhitePixel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestWhitePixel.debug.xcconfig"; path = "Target Support Files/Pods-TestWhitePixel/Pods-TestWhitePixel.debug.xcconfig"; sourceTree = "<group>"; };
+		2B2D231C6C16811F800676E4 /* Pods-TestWhitePixelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestWhitePixelTests.debug.xcconfig"; path = "Target Support Files/Pods-TestWhitePixelTests/Pods-TestWhitePixelTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3D1B09C01C59240AB64B79AC /* Pods-TestWhitePixel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestWhitePixel.release.xcconfig"; path = "Target Support Files/Pods-TestWhitePixel/Pods-TestWhitePixel.release.xcconfig"; sourceTree = "<group>"; };
+		5EBE7A3E98BD3C294448C412 /* Pods-TestWhitePixel-TestWhitePixelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestWhitePixel-TestWhitePixelUITests.release.xcconfig"; path = "Target Support Files/Pods-TestWhitePixel-TestWhitePixelUITests/Pods-TestWhitePixel-TestWhitePixelUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6F727213709935907CC3D35A /* Pods-TestWhitePixel-TestWhitePixelUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestWhitePixel-TestWhitePixelUITests.debug.xcconfig"; path = "Target Support Files/Pods-TestWhitePixel-TestWhitePixelUITests/Pods-TestWhitePixel-TestWhitePixelUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		738E3F11B839264F063BB0A5 /* Pods-TestWhitePixelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestWhitePixelTests.release.xcconfig"; path = "Target Support Files/Pods-TestWhitePixelTests/Pods-TestWhitePixelTests.release.xcconfig"; sourceTree = "<group>"; };
+		79F5E8FFC8B048BE48512869 /* Pods_TestWhitePixelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestWhitePixelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC84072C24FA900D00E8D5F3 /* TestWhitePixel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestWhitePixel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC84072F24FA900D00E8D5F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC84073124FA900D00E8D5F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BC84073324FA900D00E8D5F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BC84073624FA900D00E8D5F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC84073924FA900D00E8D5F3 /* TestWhitePixel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestWhitePixel.xcdatamodel; sourceTree = "<group>"; };
+		BC84073B24FA900E00E8D5F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC84073E24FA900E00E8D5F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC84074024FA900E00E8D5F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC84074524FA900E00E8D5F3 /* TestWhitePixelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestWhitePixelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC84074924FA900E00E8D5F3 /* TestWhitePixelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestWhitePixelTests.swift; sourceTree = "<group>"; };
+		BC84074B24FA900E00E8D5F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC84075024FA900E00E8D5F3 /* TestWhitePixelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestWhitePixelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC84075424FA900E00E8D5F3 /* TestWhitePixelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestWhitePixelUITests.swift; sourceTree = "<group>"; };
+		BC84075624FA900E00E8D5F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC84076324FB58EB00E8D5F3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BC84076724FB592F00E8D5F3 /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
+		BC84076B24FB5CB000E8D5F3 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		BC84076E24FBAB1300E8D5F3 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		BC84077124FBFC3900E8D5F3 /* NetworkRequestConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestConstant.swift; sourceTree = "<group>"; };
+		BC84077324FBFC6700E8D5F3 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		FBA46B54EE47A922AA0027FD /* Pods_TestWhitePixel_TestWhitePixelUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestWhitePixel_TestWhitePixelUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCA3EBDE063CCD584BA508D5 /* Pods_TestWhitePixel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestWhitePixel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC84072924FA900D00E8D5F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				183E9866F34410B1D0268B13 /* Pods_TestWhitePixel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC84074224FA900E00E8D5F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				048AA2D604308B442CFB1257 /* Pods_TestWhitePixelTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC84074D24FA900E00E8D5F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				186415631920E4B511E40431 /* Pods_TestWhitePixel_TestWhitePixelUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7AA345F321C87AB842857F46 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				072C94A89722B2E2F79E0E67 /* Pods-TestWhitePixel.debug.xcconfig */,
+				3D1B09C01C59240AB64B79AC /* Pods-TestWhitePixel.release.xcconfig */,
+				6F727213709935907CC3D35A /* Pods-TestWhitePixel-TestWhitePixelUITests.debug.xcconfig */,
+				5EBE7A3E98BD3C294448C412 /* Pods-TestWhitePixel-TestWhitePixelUITests.release.xcconfig */,
+				2B2D231C6C16811F800676E4 /* Pods-TestWhitePixelTests.debug.xcconfig */,
+				738E3F11B839264F063BB0A5 /* Pods-TestWhitePixelTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BC84072324FA900D00E8D5F3 = {
+			isa = PBXGroup;
+			children = (
+				BC84072E24FA900D00E8D5F3 /* TestWhitePixel */,
+				BC84074824FA900E00E8D5F3 /* TestWhitePixelTests */,
+				BC84075324FA900E00E8D5F3 /* TestWhitePixelUITests */,
+				BC84072D24FA900D00E8D5F3 /* Products */,
+				7AA345F321C87AB842857F46 /* Pods */,
+				D4860C1A76255022AC83BFBB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BC84072D24FA900D00E8D5F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC84072C24FA900D00E8D5F3 /* TestWhitePixel.app */,
+				BC84074524FA900E00E8D5F3 /* TestWhitePixelTests.xctest */,
+				BC84075024FA900E00E8D5F3 /* TestWhitePixelUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC84072E24FA900D00E8D5F3 /* TestWhitePixel */ = {
+			isa = PBXGroup;
+			children = (
+				BC84077024FBFC2700E8D5F3 /* Network */,
+				BC84076A24FB5CA900E8D5F3 /* Model */,
+				BC84076224FB58D400E8D5F3 /* API */,
+				BC84072F24FA900D00E8D5F3 /* AppDelegate.swift */,
+				BC84073124FA900D00E8D5F3 /* SceneDelegate.swift */,
+				BC84073324FA900D00E8D5F3 /* ViewController.swift */,
+				BC84073524FA900D00E8D5F3 /* Main.storyboard */,
+				BC84073B24FA900E00E8D5F3 /* Assets.xcassets */,
+				BC84073D24FA900E00E8D5F3 /* LaunchScreen.storyboard */,
+				BC84074024FA900E00E8D5F3 /* Info.plist */,
+				BC84073824FA900D00E8D5F3 /* TestWhitePixel.xcdatamodeld */,
+			);
+			path = TestWhitePixel;
+			sourceTree = "<group>";
+		};
+		BC84074824FA900E00E8D5F3 /* TestWhitePixelTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC84074924FA900E00E8D5F3 /* TestWhitePixelTests.swift */,
+				BC84074B24FA900E00E8D5F3 /* Info.plist */,
+			);
+			path = TestWhitePixelTests;
+			sourceTree = "<group>";
+		};
+		BC84075324FA900E00E8D5F3 /* TestWhitePixelUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BC84075424FA900E00E8D5F3 /* TestWhitePixelUITests.swift */,
+				BC84075624FA900E00E8D5F3 /* Info.plist */,
+			);
+			path = TestWhitePixelUITests;
+			sourceTree = "<group>";
+		};
+		BC84076224FB58D400E8D5F3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				BC84076624FB591C00E8D5F3 /* APIRouter */,
+				BC84076324FB58EB00E8D5F3 /* Constants.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		BC84076624FB591C00E8D5F3 /* APIRouter */ = {
+			isa = PBXGroup;
+			children = (
+				BC84076724FB592F00E8D5F3 /* ApiRouter.swift */,
+				BC84076E24FBAB1300E8D5F3 /* ApiClient.swift */,
+			);
+			path = APIRouter;
+			sourceTree = "<group>";
+		};
+		BC84076A24FB5CA900E8D5F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC84076B24FB5CB000E8D5F3 /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC84077024FBFC2700E8D5F3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BC84077124FBFC3900E8D5F3 /* NetworkRequestConstant.swift */,
+				BC84077324FBFC6700E8D5F3 /* RequestManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D4860C1A76255022AC83BFBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCA3EBDE063CCD584BA508D5 /* Pods_TestWhitePixel.framework */,
+				FBA46B54EE47A922AA0027FD /* Pods_TestWhitePixel_TestWhitePixelUITests.framework */,
+				79F5E8FFC8B048BE48512869 /* Pods_TestWhitePixelTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC84072B24FA900D00E8D5F3 /* TestWhitePixel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC84075924FA900E00E8D5F3 /* Build configuration list for PBXNativeTarget "TestWhitePixel" */;
+			buildPhases = (
+				1137FF2E9166DD84646B49C3 /* [CP] Check Pods Manifest.lock */,
+				BC84072824FA900D00E8D5F3 /* Sources */,
+				BC84072924FA900D00E8D5F3 /* Frameworks */,
+				BC84072A24FA900D00E8D5F3 /* Resources */,
+				9901AC1E363C129715F44533 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestWhitePixel;
+			productName = TestWhitePixel;
+			productReference = BC84072C24FA900D00E8D5F3 /* TestWhitePixel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC84074424FA900E00E8D5F3 /* TestWhitePixelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC84075C24FA900E00E8D5F3 /* Build configuration list for PBXNativeTarget "TestWhitePixelTests" */;
+			buildPhases = (
+				A6E023B2EB028EC69D98A656 /* [CP] Check Pods Manifest.lock */,
+				BC84074124FA900E00E8D5F3 /* Sources */,
+				BC84074224FA900E00E8D5F3 /* Frameworks */,
+				BC84074324FA900E00E8D5F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC84074724FA900E00E8D5F3 /* PBXTargetDependency */,
+			);
+			name = TestWhitePixelTests;
+			productName = TestWhitePixelTests;
+			productReference = BC84074524FA900E00E8D5F3 /* TestWhitePixelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BC84074F24FA900E00E8D5F3 /* TestWhitePixelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC84075F24FA900E00E8D5F3 /* Build configuration list for PBXNativeTarget "TestWhitePixelUITests" */;
+			buildPhases = (
+				03CF2CE0744EB9DFBF4E2715 /* [CP] Check Pods Manifest.lock */,
+				BC84074C24FA900E00E8D5F3 /* Sources */,
+				BC84074D24FA900E00E8D5F3 /* Frameworks */,
+				BC84074E24FA900E00E8D5F3 /* Resources */,
+				8BA5D0DD93AE8EC75E06CAC9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC84075224FA900E00E8D5F3 /* PBXTargetDependency */,
+			);
+			name = TestWhitePixelUITests;
+			productName = TestWhitePixelUITests;
+			productReference = BC84075024FA900E00E8D5F3 /* TestWhitePixelUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC84072424FA900D00E8D5F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = prox.com;
+				TargetAttributes = {
+					BC84072B24FA900D00E8D5F3 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					BC84074424FA900E00E8D5F3 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = BC84072B24FA900D00E8D5F3;
+					};
+					BC84074F24FA900E00E8D5F3 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = BC84072B24FA900D00E8D5F3;
+					};
+				};
+			};
+			buildConfigurationList = BC84072724FA900D00E8D5F3 /* Build configuration list for PBXProject "TestWhitePixel" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC84072324FA900D00E8D5F3;
+			productRefGroup = BC84072D24FA900D00E8D5F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC84072B24FA900D00E8D5F3 /* TestWhitePixel */,
+				BC84074424FA900E00E8D5F3 /* TestWhitePixelTests */,
+				BC84074F24FA900E00E8D5F3 /* TestWhitePixelUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC84072A24FA900D00E8D5F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC84073F24FA900E00E8D5F3 /* LaunchScreen.storyboard in Resources */,
+				BC84073C24FA900E00E8D5F3 /* Assets.xcassets in Resources */,
+				BC84073724FA900D00E8D5F3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC84074324FA900E00E8D5F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC84074E24FA900E00E8D5F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03CF2CE0744EB9DFBF4E2715 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestWhitePixel-TestWhitePixelUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1137FF2E9166DD84646B49C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestWhitePixel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BA5D0DD93AE8EC75E06CAC9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestWhitePixel-TestWhitePixelUITests/Pods-TestWhitePixel-TestWhitePixelUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestWhitePixel-TestWhitePixelUITests/Pods-TestWhitePixel-TestWhitePixelUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestWhitePixel-TestWhitePixelUITests/Pods-TestWhitePixel-TestWhitePixelUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9901AC1E363C129715F44533 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestWhitePixel/Pods-TestWhitePixel-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestWhitePixel/Pods-TestWhitePixel-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestWhitePixel/Pods-TestWhitePixel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6E023B2EB028EC69D98A656 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestWhitePixelTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC84072824FA900D00E8D5F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC84076424FB58EB00E8D5F3 /* Constants.swift in Sources */,
+				BC84076824FB592F00E8D5F3 /* ApiRouter.swift in Sources */,
+				BC84073424FA900D00E8D5F3 /* ViewController.swift in Sources */,
+				BC84077224FBFC3900E8D5F3 /* NetworkRequestConstant.swift in Sources */,
+				BC84076F24FBAB1300E8D5F3 /* ApiClient.swift in Sources */,
+				BC84077424FBFC6700E8D5F3 /* RequestManager.swift in Sources */,
+				BC84073024FA900D00E8D5F3 /* AppDelegate.swift in Sources */,
+				BC84073A24FA900D00E8D5F3 /* TestWhitePixel.xcdatamodeld in Sources */,
+				BC84076C24FB5CB000E8D5F3 /* Post.swift in Sources */,
+				BC84073224FA900D00E8D5F3 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC84074124FA900E00E8D5F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC84074A24FA900E00E8D5F3 /* TestWhitePixelTests.swift in Sources */,
+				BC84076924FB592F00E8D5F3 /* ApiRouter.swift in Sources */,
+				BC84076524FB58EB00E8D5F3 /* Constants.swift in Sources */,
+				BC84076D24FB5CB000E8D5F3 /* Post.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC84074C24FA900E00E8D5F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC84075524FA900E00E8D5F3 /* TestWhitePixelUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC84074724FA900E00E8D5F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC84072B24FA900D00E8D5F3 /* TestWhitePixel */;
+			targetProxy = BC84074624FA900E00E8D5F3 /* PBXContainerItemProxy */;
+		};
+		BC84075224FA900E00E8D5F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC84072B24FA900D00E8D5F3 /* TestWhitePixel */;
+			targetProxy = BC84075124FA900E00E8D5F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC84073524FA900D00E8D5F3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC84073624FA900D00E8D5F3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC84073D24FA900E00E8D5F3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC84073E24FA900E00E8D5F3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC84075724FA900E00E8D5F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC84075824FA900E00E8D5F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC84075A24FA900E00E8D5F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 072C94A89722B2E2F79E0E67 /* Pods-TestWhitePixel.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K2TYLYAWMK;
+				INFOPLIST_FILE = TestWhitePixel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = phuongdoan.TestWhitePixel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC84075B24FA900E00E8D5F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D1B09C01C59240AB64B79AC /* Pods-TestWhitePixel.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K2TYLYAWMK;
+				INFOPLIST_FILE = TestWhitePixel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = phuongdoan.TestWhitePixel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BC84075D24FA900E00E8D5F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B2D231C6C16811F800676E4 /* Pods-TestWhitePixelTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K2TYLYAWMK;
+				INFOPLIST_FILE = TestWhitePixelTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = phuongdoan.TestWhitePixelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestWhitePixel.app/TestWhitePixel";
+			};
+			name = Debug;
+		};
+		BC84075E24FA900E00E8D5F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 738E3F11B839264F063BB0A5 /* Pods-TestWhitePixelTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K2TYLYAWMK;
+				INFOPLIST_FILE = TestWhitePixelTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = phuongdoan.TestWhitePixelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestWhitePixel.app/TestWhitePixel";
+			};
+			name = Release;
+		};
+		BC84076024FA900E00E8D5F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F727213709935907CC3D35A /* Pods-TestWhitePixel-TestWhitePixelUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K2TYLYAWMK;
+				INFOPLIST_FILE = TestWhitePixelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = phuongdoan.TestWhitePixelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TestWhitePixel;
+			};
+			name = Debug;
+		};
+		BC84076124FA900E00E8D5F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EBE7A3E98BD3C294448C412 /* Pods-TestWhitePixel-TestWhitePixelUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K2TYLYAWMK;
+				INFOPLIST_FILE = TestWhitePixelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = phuongdoan.TestWhitePixelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TestWhitePixel;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC84072724FA900D00E8D5F3 /* Build configuration list for PBXProject "TestWhitePixel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC84075724FA900E00E8D5F3 /* Debug */,
+				BC84075824FA900E00E8D5F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC84075924FA900E00E8D5F3 /* Build configuration list for PBXNativeTarget "TestWhitePixel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC84075A24FA900E00E8D5F3 /* Debug */,
+				BC84075B24FA900E00E8D5F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC84075C24FA900E00E8D5F3 /* Build configuration list for PBXNativeTarget "TestWhitePixelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC84075D24FA900E00E8D5F3 /* Debug */,
+				BC84075E24FA900E00E8D5F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC84075F24FA900E00E8D5F3 /* Build configuration list for PBXNativeTarget "TestWhitePixelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC84076024FA900E00E8D5F3 /* Debug */,
+				BC84076124FA900E00E8D5F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BC84073824FA900D00E8D5F3 /* TestWhitePixel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BC84073924FA900D00E8D5F3 /* TestWhitePixel.xcdatamodel */,
+			);
+			currentVersion = BC84073924FA900D00E8D5F3 /* TestWhitePixel.xcdatamodel */;
+			path = TestWhitePixel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BC84072424FA900D00E8D5F3 /* Project object */;
+}
